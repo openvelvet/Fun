@@ -20,9 +20,9 @@
         <td><%= job.skills %></td>
         <td><%= job.price %></td>
         <td><%= job.rate %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', job, class: "btn btn-link" %></td>
+        <td><%= link_to 'Edit', edit_job_path(job), class: "btn btn-link" %></td>
+        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?', class: "btn btn-link" } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Job', new_job_path %>
+<%= link_to 'New Job', new_job_path, class: "btn btn-link" %>
